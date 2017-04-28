@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8159F09D-2278-1B8A-71F8-5321BC126C3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>5.5.0f3</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Frame\Frame\AssetManager\Asset\Asset.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Asset\AssetPack.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Asset\AssetPackState.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Asset\AssetRef.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\AssetInfo.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\AssetManager.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\AssetManagerInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\AssetPackLoadType.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\AssetPackType.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\AssetType.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\IAnimtionControllerLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\IAsset.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\IAssetLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\IAssetManager.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\IAudioClipLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\IBytesLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\IPrefabLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\ISceneLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\ISpriteAtlas.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\ISpriteAtlasLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\ITextLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\ITextureLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Loader\AnimationControllerLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Loader\AssetLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Loader\AudioClipLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Loader\BytesLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Loader\PrefabLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Loader\SceneLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Loader\SpriteAtlasLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Loader\TextLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Loader\TextureLoader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Tasks\AssetBundleLoadTask.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Tasks\AssetLoadFromBundleTask.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Tasks\AssetsLoadFromBundleTask.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Tasks\ResourceLoadTask.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManager\Tasks\SceneLoadTask.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManagerUpdater\AssetManagerUpdater.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManagerUpdater\AssetManagerUpdaterInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetManagerUpdater\IAssetManagerUpdater.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetUpdater\Asset.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetUpdater\AssetListUpdater.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetUpdater\AssetListUpdaterInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetUpdater\AssetUpdateType.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetUpdater\IAssetConfigure.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetUpdater\IAssetConfigureParser.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetUpdater\IAssetDescription.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetUpdater\IAssetDownloader.cs" />
+    <Compile Include="Assets\Frame\Frame\AssetUpdater\IAssetListUpdater.cs" />
+    <Compile Include="Assets\Frame\Frame\Bugly\Bugly.cs" />
+    <Compile Include="Assets\Frame\Frame\Bugly\BuglyInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\Bugly\IBugly.cs" />
+    <Compile Include="Assets\Frame\Frame\ByteStorage.Utility\ByteConverter.cs" />
+    <Compile Include="Assets\Frame\Frame\ByteStorage\ByteArray.cs" />
+    <Compile Include="Assets\Frame\Frame\ByteStorage\ByteBlock.cs" />
+    <Compile Include="Assets\Frame\Frame\ByteStorage\ByteStorage.cs" />
+    <Compile Include="Assets\Frame\Frame\ByteStorage\ByteStorageInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\ByteStorage\IByteArray.cs" />
+    <Compile Include="Assets\Frame\Frame\ByteStorage\IByteStorage.cs" />
+    <Compile Include="Assets\Frame\Frame\ClientCollector\AndroidClientNativeBridge.cs" />
+    <Compile Include="Assets\Frame\Frame\ClientCollector\ClientCollector.cs" />
+    <Compile Include="Assets\Frame\Frame\ClientCollector\ClientCollectorInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\ClientCollector\ClientInfoPack.cs" />
+    <Compile Include="Assets\Frame\Frame\ClientCollector\ClientNativeBridge.cs" />
+    <Compile Include="Assets\Frame\Frame\ClientCollector\IClientCollector.cs" />
+    <Compile Include="Assets\Frame\Frame\ClientCollector\IClientInfoPack.cs" />
+    <Compile Include="Assets\Frame\Frame\ClientCollector\IOSClientNativeBridge.cs" />
+    <Compile Include="Assets\Frame\Frame\GameAnalytics\GameAnalytics.cs" />
+    <Compile Include="Assets\Frame\Frame\GameAnalytics\GameAnalyticsInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\GameAnalytics\IGameAnalytics.cs" />
+    <Compile Include="Assets\Frame\Frame\GameAnalyticsLua\GameAnalyticsToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\GameAnalyticsLua\GameAnalyticsToLuaInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\GameAnalyticsLua\IGameAnalyticsToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\GameBox.cs" />
+    <Compile Include="Assets\Frame\Frame\GameFramework\Game.cs" />
+    <Compile Include="Assets\Frame\Frame\GameFramework\GameInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\GameFramework\IGame.cs" />
+    <Compile Include="Assets\Frame\Frame\GameFramework\Scene.cs" />
+    <Compile Include="Assets\Frame\Frame\GeoQuery\GeoQuery.cs" />
+    <Compile Include="Assets\Frame\Frame\GeoQuery\GeoQueryInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\GeoQuery\GeoResult.cs" />
+    <Compile Include="Assets\Frame\Frame\GeoQuery\IGeoQuery.cs" />
+    <Compile Include="Assets\Frame\Frame\GeoQuery\IGeoQueryEngine.cs" />
+    <Compile Include="Assets\Frame\Frame\GeoQuery\IGeoResult.cs" />
+    <Compile Include="Assets\Frame\Frame\GeoQuery\ShinyGeoQueryEngine.cs" />
+    <Compile Include="Assets\Frame\Frame\GeoQuery\TinyJSON.cs" />
+    <Compile Include="Assets\Frame\Frame\Getui\Getui.cs" />
+    <Compile Include="Assets\Frame\Frame\Getui\GetuiInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\Getui\IGetui.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightFramework\GiantLightGame.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightFramework\GiantLightGameInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightFramework\GiantLightScene.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightFramework\IGiantGame.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\GiantCall.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\GiantLightProxy.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\GiantLightServer.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\GiantLightServerInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\GiantPackage.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\GiantRequest.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\GiantResponse.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\IGiantLightClient.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\IGiantLightProxy.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\IGiantLightServer.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantLightServer\RPC\rpc.proto.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\CmdSerilizer.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Compress\ZipCompress.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Encrypt\DESEncrypt.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Encrypt\DESEncryptHandle.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Encrypt\DESEncryptorFix.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Encrypt\RC5Encrypt.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Encrypt\RC5EncryptHandle.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\GameTime.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\GiantFreeServer.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\GiantFreeServerInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\IGiantFreeClient.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\IGiantFreeServer.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\IMessage.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Login\FirServerLogin.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Login\GameServerLogin.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Login\LoginModule.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\Message.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\ZTMsg\LoginCommand.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantServer\ZTMsg\TimerCommand.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\GiantVoice.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\GiantVoiceInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\IConverterListener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\IDownloaderListener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\IGiantVoice.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\IPlayerListener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\IRecorderListener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\IUploaderListener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\UI\Controls\GiantVoicePlayer.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\UI\Controls\GiantVoiceRecorder.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\UI\Editors\GiantVoicePlayer.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\UI\Editors\GiantVoiceRecorder.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\UI\IGiantVoicePlayer.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\UI\IGiantVoiceRecorder.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\UI\UIType.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\VoiceDownloadListener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\VoicePlayerListener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\VoiceRecordListsener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\VoiceToWordListener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoice\VoiceUploadListener.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoiceLua\GiantVoiceToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoiceLua\GiantVoiceToLuaInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoiceLua\IGiantVoiceToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoiceLua\ToLua\GiantVoicePlayerToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\GiantVoiceLua\ToLua\GiantVoiceRecorderToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\EditorObject.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\EditorObject\ChunkObject.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\EditorObject\LevelObject.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\EditorObject\LightModifierObject.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\EditorObject\PrefabObject.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\ILevelSystem.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\ISceneCharacter.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\LevelSystem.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\LevelSystemInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneChunk.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneChunkData.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneData\SceneGroupData.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneData\SceneLightModifierData.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneData\ScenePrefabData.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneLevel.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneLevelData.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneObject.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneObject\SceneGroup.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneObject\SceneLightModifier.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneObject\ScenePrefab.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\SceneObjectData.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\States\ChunkDataLoadingState.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\States\ChunkLoadedState.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\States\ChunkObjectLoadingState.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\States\ChunkState.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\States\ChunkUnloadedState.cs" />
+    <Compile Include="Assets\Frame\Frame\LevelSystem\States\ChunkUnloadingState.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\ILuaProtocolBuffer.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\LuaProtocolBuffer.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\LuaProtocolBufferInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\Module\LuaContainersModule.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\Module\LuaDecoderModule.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\Module\LuaDescriptorModule.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\Module\LuaEncoderModule.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\Module\LuaListenerModule.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\Module\LuaProtobufModule.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\Module\LuaTextformatModule.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\Module\LuaTypecheckersModule.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\Module\LuaWireformatModule.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.PB\NativeMethods.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.Struct\ILuaStruct.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.Struct\LuaStruct.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.Struct\LuaStructInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime.Struct\NativeMethods.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\ILuaExecuter.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\ILuaRuntime.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\ILuaString.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\ILuaTable.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\KeraLuaLite\CharPtr.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\KeraLuaLite\Lua.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\KeraLuaLite\LuaDebug.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\KeraLuaLite\LuaState.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\KeraLuaLite\LuaTag.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\KeraLuaLite\NativeMethods.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\KeraLuaLite\Platform\CLSCompliantAttribute.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\LuaBase.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\LuaBridgeAttribute.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\LuaExecuter.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\LuaFunction.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\LuaRuntime.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\LuaRuntimeInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\LuaString.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\LuaTable.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\NLuaLite\LuaLib\GCOptions.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\NLuaLite\LuaLib\LuaIndexes.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\NLuaLite\LuaLib\LuaLib.cs" />
+    <Compile Include="Assets\Frame\Frame\LuaRuntime\NLuaLite\LuaLib\LuaTypes.cs" />
+    <Compile Include="Assets\Frame\Frame\NativeChannel\INativeChannel.cs" />
+    <Compile Include="Assets\Frame\Frame\NativeChannel\INativeProxy.cs" />
+    <Compile Include="Assets\Frame\Frame\NativeChannel\NativeBridge.cs" />
+    <Compile Include="Assets\Frame\Frame\NativeChannel\NativeChannel.cs" />
+    <Compile Include="Assets\Frame\Frame\NativeChannel\NativeChannelInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\NativeChannel\NativeModule.cs" />
+    <Compile Include="Assets\Frame\Frame\NativeChannel\NativeProxy.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\IHttpChannel.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\INetworkChannel.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\INetworkManager.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\ISocketChannel.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\NetworkManager\ChannelState.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\NetworkManager\HttpChannel.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\NetworkManager\NetworkChannel.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\NetworkManager\NetworkManager.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\NetworkManager\SocketChannel.cs" />
+    <Compile Include="Assets\Frame\Frame\NetworkManager\NetworkManagerInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\ObjectPool\IRecycleFactory.cs" />
+    <Compile Include="Assets\Frame\Frame\ObjectPool\IRecycleManager.cs" />
+    <Compile Include="Assets\Frame\Frame\ObjectPool\IRecyclePool.cs" />
+    <Compile Include="Assets\Frame\Frame\ObjectPool\IRecycleProcesser.cs" />
+    <Compile Include="Assets\Frame\Frame\ObjectPool\ObjectJar.cs" />
+    <Compile Include="Assets\Frame\Frame\ObjectPool\RecycleManager.cs" />
+    <Compile Include="Assets\Frame\Frame\ObjectPool\RecycleManagerInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\ObjectPool\RecyclePool.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Assembly\AssemblyPlatform.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Console\Attributes.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Console\Console.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Console\ConsoleContext.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Console\IndexHTML.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Console\ResponseExtension.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Core\C0.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Core\CRef.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Core\Dispatcher.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Core\Message.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Core\Singleton.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Core\State.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Core\StateMachine.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Graph\GraphStyle.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\IConsoleContext.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\IService.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\IServiceArgs.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\IServiceGraph.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\IServiceHost.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\IServiceRunner.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Logger\Logger.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\ServiceArgs.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\ServiceBaseInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\ServiceCenter.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\ServiceEditor.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\ServiceInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\ServicePlayer.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\ServiceRunner.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\AsyncStreamIO.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\StreamExtension.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\StringStream.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\StringStreamAsyncReader.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\StringStreamReader.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\StringStreamWriter.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\TableStream.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\TableStreamAsyncReader.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\TableStreamReader.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Stream\TableStreamWriter.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\AsyncCallTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\AsyncOperationTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\AsyncTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\AudioCrossfadeTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\CompletedTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\FileReadTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\FileWriteTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\HttpDownloadTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\ServiceTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\ServicesTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\WWWLoadFromCacheTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\WWWLoadTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Tasks\WaitAllTask.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\UnityPlatform.cs" />
+    <Compile Include="Assets\Frame\Frame\ServiceCenter\Version\Version.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\AnimationObject.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Base\AnimationBase.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Base\AnimationCallback.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Base\AnimationEase.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Base\AnimationForever.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Base\AnimationInterval.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Base\AnimationSequence.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Base\AnimationSpawn.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Bezier.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationBezierMoveBy.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationBezierMoveTo.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationBezierScaleBy.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationBezierScaleTo.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationBlink.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationFade.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationFadeIn.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationFadeOut.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationMoveBy.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationMoveTo.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationRotateBy.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationRotateTo.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationScaleBy.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationScaleTo.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationShakeMoveBy.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationShakeMoveTo.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationShakeScaleBy.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationShakeScaleTo.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Extend\AnimationValueTo.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Animation\Shake.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\Button.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\Dropdown.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\Element.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\Image.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\ImageAnimation.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\InputField.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\Label.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\ScrollView.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\Slider.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\Toggle.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\Toggles.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Controls\Window.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Editors\HyperText.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\Editors\ImageAnimation.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IButton.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IControlFactory.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IDropdown.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IElement.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IImage.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IImageAnimation.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IInputField.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\ILabel.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IScrollView.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\ISlider.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IToggle.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IToggles.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IUISystem.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\IWindow.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\UISystem.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\UISystemInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\UI\UIType.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\IUIToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\ButtonToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\DropdownToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\ElementToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\ImageAnimationToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\ImageToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\InputFieldToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\LabelToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\ScrollViewToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\SliderToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\ToggleToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\TogglesToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\UISystemToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\ToLua\WindowToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\UIToLua.cs" />
+    <Compile Include="Assets\Frame\Frame\UILua\UIToLuaInstaller.cs" />
+    <Compile Include="Assets\Frame\Frame\WebView\IWebView.cs" />
+    <Compile Include="Assets\Frame\Frame\WebView\WebView.cs" />
+    <Compile Include="Assets\Frame\Frame\WebView\WebViewInstaller.cs" />
+    <Compile Include="Assets\task\TaskTest.cs" />
+    <Compile Include="Assets\task\interface\IConsoleContext.cs" />
+    <Compile Include="Assets\task\interface\IService.cs" />
+    <Compile Include="Assets\task\interface\IServiceArgs.cs" />
+    <Compile Include="Assets\task\interface\IServiceGraph.cs" />
+    <Compile Include="Assets\task\interface\IServiceHost.cs" />
+    <Compile Include="Assets\task\interface\IServiceRunner.cs" />
+    <Compile Include="Assets\task\service\Core.cs" />
+    <Compile Include="Assets\task\service\GraphStyle.cs" />
+    <Compile Include="Assets\task\service\Logger.cs" />
+    <Compile Include="Assets\task\service\ServiceArgs.cs" />
+    <Compile Include="Assets\task\service\ServiceBaseInstall.cs" />
+    <Compile Include="Assets\task\service\ServiceCenter.cs" />
+    <Compile Include="Assets\task\service\ServicePlayer.cs" />
+    <Compile Include="Assets\task\service\ServiceRunner.cs" />
+    <Compile Include="Assets\task\service\UnityPlatform.cs" />
+    <Compile Include="Assets\task\task\AsyncCallTask.cs" />
+    <Compile Include="Assets\task\task\AsyncOperationTask.cs" />
+    <Compile Include="Assets\task\task\AsyncTask.cs" />
+    <Compile Include="Assets\task\task\AudioCrossfadeTask.cs" />
+    <Compile Include="Assets\task\task\CompletedTask.cs" />
+    <Compile Include="Assets\task\task\FileReadTask.cs" />
+    <Compile Include="Assets\task\task\FileWriteTask.cs" />
+    <Compile Include="Assets\task\task\HttpDownloadTask.cs" />
+    <Compile Include="Assets\task\task\ServiceTask.cs" />
+    <Compile Include="Assets\task\task\ServicesTask.cs" />
+    <Compile Include="Assets\task\task\WWWLoadFromCacheTask.cs" />
+    <Compile Include="Assets\task\task\WWWLoadTask.cs" />
+    <Compile Include="Assets\task\task\WaitAllTask.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
