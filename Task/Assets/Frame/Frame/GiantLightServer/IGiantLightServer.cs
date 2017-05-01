@@ -20,7 +20,7 @@ namespace GameBox.Service.GiantLightServer
     ///   ...
     /// }
     /// 
-    /// var server = ServiceCenter.GetService<IGiantLightServer>();
+    /// var server = TaskCenter.GetService<IGiantLightServer>();
     /// server.Connect("xx.xx.xx.xx", 8000, new Client());
     /// ...
     /// 

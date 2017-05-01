@@ -37,7 +37,7 @@ namespace GameBox.Service.AssetManager
     /// 
     /// @code {.cs}
     /// // 如果能确保资产管理服务已经运行，可以直接获取
-    /// var assetManager = ServiceCenter.GetService<IAssetManager>();
+    /// var assetManager = TaskCenter.GetService<IAssetManager>();
     /// @endcode
     /// </summary>
     public interface IAssetManager : IService

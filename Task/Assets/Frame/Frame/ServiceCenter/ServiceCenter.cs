@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------
-// File:    ServiceCenter.cs
+// File:    TaskCenter.cs
 // Author:  mouguangyi
 // Date:    2016.03.30
 // Description:
@@ -19,16 +19,16 @@ namespace GameBox.Framework
     /// 
     /// @section example 例子
     /// @code{.cs}
-    /// var assetManager = ServiceCenter.GetService<IAssetManager>();
+    /// var assetManager = TaskCenter.GetService<IAssetManager>();
     /// @endcode
     /// 
     /// @code{.cs}
-    /// var assetManager = ServiceCenter.GetService("com.giant.service.assetmanager") as IAssetManager;
+    /// var assetManager = TaskCenter.GetService("com.giant.service.assetmanager") as IAssetManager;
     /// @endcode
     /// </summary>
     public class ServiceCenter
     {
-        //public ServiceCenter()
+        //public TaskCenter()
         //{
         //    _Enter(null);
         //}
@@ -37,7 +37,7 @@ namespace GameBox.Framework
             this.host = host;
 
             if (null != ServiceCenter.instance) {
-                throw new Exception("Duplicated ServiceCenter component！");
+                throw new Exception("Duplicated TaskCenter component！");
             }
 
             ServiceCenter.instance = this;
@@ -262,7 +262,7 @@ namespace GameBox.Framework
         internal static ServiceCenter Center()
         {
             if (null == ServiceCenter.instance) {
-                throw new MissingComponentException("ServiceCenter component is missing!");
+                throw new MissingComponentException("TaskCenter component is missing!");
             }
 
             return ServiceCenter.instance;

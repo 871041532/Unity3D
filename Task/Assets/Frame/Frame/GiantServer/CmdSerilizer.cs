@@ -46,7 +46,7 @@ namespace GameBox.Service.GiantFreeServer
 
         //public static void BytesToStruct<T>(byte[] data, ref T ss)
         //{
-        //    var storage = ServiceCenter.GetService<IByteStorage>();
+        //    var storage = TaskCenter.GetService<IByteStorage>();
         //    var bytes = storage.Alloc(data.Length);
         //    bytes.WriteBytes(data, 0, data.Length);
         //    bytes.Seek();

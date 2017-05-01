@@ -46,7 +46,7 @@ namespace GameFramework
         public static void TestInit()//初始化Test
         {
             GameObject TestObject = new GameObject("TaskTestObject");
-            TestObject.AddComponent<ServicePlayer>();
+            TestObject.AddComponent<TaskPlayer>();
             use = TestObject.AddComponent<TestUsing>();
         }
 
@@ -69,7 +69,7 @@ namespace GameFramework
             new HttpDownloadTask(@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1493373803330&di=811ffbf9429ec68e8b8e23d3733c4939&imgtype=0&src=http%3A%2F%2Fmvimg1.meitudata.com%2F56125377d1f169287.jpg").Start().Continue((task)=> {
                 Debug.Log("下载完成");
 
-                new FileWriteTask(@"E:\download.jpg", task.Result as byte[]).Start().Continue((task2) => {
+                new FileWriteTask(@"D:\download.jpg", task.Result as byte[]).Start().Continue((task2) => {
                     Debug.Log("写入完成");
                     return null;
                 });

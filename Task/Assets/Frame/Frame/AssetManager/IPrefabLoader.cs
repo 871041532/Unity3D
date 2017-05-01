@@ -16,7 +16,7 @@ namespace GameBox.Service.AssetManager
     /// 
     /// @section example 例子
     /// @code{.cs}
-    /// var assetManager = ServiceCenter.GetService<IAssetManager>();
+    /// var assetManager = TaskCenter.GetService<IAssetManager>();
     /// var loader = assetManager.CreateLoader<IPrefabLoader>("XXX.prefab");
     /// var asset = loader.Load(); // 同步装载
     /// var go = GameObject.Instantiate(asset) as GameObject;

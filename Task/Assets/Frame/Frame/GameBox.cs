@@ -12,7 +12,7 @@ namespace GameBox
     ///
     /// @subsection init 初始化
     /// @li @c 在Unity项目的Assets目录下创建Editor目录
-    /// @li @c 将<A HREF="https://muguangyi.github.io/GameBox/GameBox/Editor/ServiceCenter.Editor.dll"><B>ServiceCenter.Editor.dll</B></A>下载放在Editor目录
+    /// @li @c 将<A HREF="https://muguangyi.github.io/GameBox/GameBox/Editor/TaskCenter.Editor.dll"><B>TaskCenter.Editor.dll</B></A>下载放在Editor目录
     /// @li @c 切换回Unity，在GameBox菜单中选择ServiceCenter
     /// @li @c 在弹出的工具窗口点击“Create”按钮
     /// @li @c 在更新后的界面勾选需要的组件，并点击“Update”按钮
@@ -47,12 +47,12 @@ namespace GameBox
     ///
     /// @code{.cs}
     /// // 使用ServiceCenter通过服务接口获取资产管理服务
-    /// var assetManager = ServiceCenter.GetService<IAssetManager>();
+    /// var assetManager = TaskCenter.GetService<IAssetManager>();
     /// @endcode
     ///
     /// @code{.cs}
     /// // 使用ServiceCenter通过服务ID获取资产管理服务
-    /// var assetManager = ServiceCenter.GetService("com.giant.service.assetmanager") as IAssetManager;
+    /// var assetManager = TaskCenter.GetService("com.giant.service.assetmanager") as IAssetManager;
     /// @endcode
     ///
     /// @section asynctask 异步任务（AsyncTask）
